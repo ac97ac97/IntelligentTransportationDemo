@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+
+    <solid android:color="@android:color/white"/><!--填充-->
+    <stroke android:color="@android:color/darker_gray" android:width="2dp"/> <!--描边-->
+    <size android:width="40dp" android:height="40dp"/>
+</shape>

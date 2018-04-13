@@ -1,0 +1,15 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:visible="false" android:id="@+id/menu_group">
+        <item
+            android:id="@+id/project_chongzhi"
+            android:title="充值记录"
+            android:visible="false"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/project_chongzhizhongxin"
+            android:title="充值"
+            android:visible="false"
+            app:showAsAction="always" />
+    </group>
+</menu>

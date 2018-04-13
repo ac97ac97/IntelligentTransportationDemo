@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lakalaka.intelligenttransportationdemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".app.AppClient"
+        android:allowBackup="true"
+        android:icon="@drawable/app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.activity.WelcomeActivity"
+            android:theme="@style/FullSrceen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".ui.activity.GuideActivity"
+            android:theme="@style/FullSrceen">
+        </activity>
+        <activity
+            android:name=".ui.activity.QueryResultsActivity"
+            android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name=".ui.activity.IllegalImageActivity"
+            android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name=".ui.activity.ImageReadActivity"
+            android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name=".ui.activity.UserRegisterActivity"
+            android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name=".ui.activity.FoundPasswordActivity"
+            android:launchMode="singleTask">
+        </activity>
+        <activity android:name=".ui.activity.LanguageSettingActivity">
+        </activity>
+        <activity android:name=".ui.activity.MyLogMangerActivity">
+        </activity>
+        <activity android:name=".ui.activity.ChuxingSuggestionActivity">
+        </activity>
+        <activity android:name=".ui.activity.NetWorkSetting">
+        </activity>
+    </application>
+
+</manifest>

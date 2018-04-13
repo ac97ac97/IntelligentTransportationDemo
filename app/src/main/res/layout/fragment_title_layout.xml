@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:orientation="horizontal"
+    android:background="#3f3fe1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_title_fragment"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/menu_icon" />
+
+        <TextView
+            android:id="@+id/tv_title_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="道路信息"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="700dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:layout_gravity="center_vertical"
+                android:id="@+id/btn_chuxing_suggestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="出行建议"/>
+            <Button
+                android:layout_gravity="center_vertical"
+                android:id="@+id/btn_clear_autologin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清除自动登录" />
+
+            <Button
+                android:layout_gravity="center_vertical"
+                android:id="@+id/btn_myLog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的日志" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lakalaka.intelligenttransportationdemo.ui.activity.IllegalImageActivity">
+
+    <include layout="@layout/fragment_title_layout" />
+
+    <LinearLayout
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_marginRight="150dp"
+            android:id="@+id/iv_image1"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/weizhang1" />
+
+        <ImageView
+            android:layout_marginLeft="150dp"
+            android:id="@+id/iv_image2"
+            android:layout_width="147dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/weizhang2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/iv_image3"
+            android:layout_marginRight="150dp"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@drawable/weizhang3" />
+
+        <ImageView
+            android:id="@+id/iv_image4"
+            android:layout_marginLeft="150dp"
+            android:layout_width="148dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.01"
+            android:src="@drawable/weizhang4" />
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+        <TextView
+            android:paddingTop="20dp"
+            android:textSize="50sp"
+            android:gravity="center_horizontal"
+            android:text="实时温度"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/temp_table2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.github.mikephil.charting.charts.LineChart>
+
+
+
+
+
+</LinearLayout>

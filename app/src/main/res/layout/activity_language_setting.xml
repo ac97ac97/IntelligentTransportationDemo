@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/login_title_setting_language_layout"/>
+    <LinearLayout
+        android:layout_margin="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <RadioGroup
+        android:id="@+id/rg_setLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_marginTop="20dp"
+            android:id="@+id/rb_setLanguage_Chinese"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/language_chinese"/>
+        <RadioButton
+            android:layout_marginTop="20dp"
+            android:id="@+id/rb_setLanguage_English"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/language_english"/>
+    </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

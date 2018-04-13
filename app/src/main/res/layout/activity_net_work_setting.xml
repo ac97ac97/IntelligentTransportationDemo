@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lakalaka.intelligenttransportationdemo.ui.activity.NetWorkSetting">
+    <include layout="@layout/title_network_settings" android:id="@+id/title_netSetting"/>
+  <LinearLayout
+      android:layout_margin="100dp"
+      android:layout_below="@+id/title_netSetting"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <EditText
+              android:inputType="number"
+              android:singleLine="true"
+              android:maxLength="3"
+              android:id="@+id/netset_one"
+              android:layout_width="100dp"
+              android:layout_height="wrap_content"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textStyle="bold"
+              android:textSize="30sp"
+              android:gravity="center"
+              android:text="."
+              />
+          <EditText
+              android:inputType="number"
+              android:singleLine="true"
+              android:maxLength="3"
+              android:id="@+id/netset_two"
+              android:layout_width="100dp"
+              android:layout_height="wrap_content"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textStyle="bold"
+              android:textSize="30sp"
+              android:gravity="center"
+              android:text="."
+              />
+          <EditText
+              android:inputType="number"
+              android:singleLine="true"
+              android:maxLength="3"
+              android:id="@+id/netset_three"
+              android:layout_width="100dp"
+              android:layout_height="wrap_content"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textStyle="bold"
+              android:textSize="30sp"
+              android:gravity="center"
+              android:text="."
+              />
+          <EditText
+              android:inputType="number"
+              android:singleLine="true"
+              android:maxLength="3"
+              android:id="@+id/netset_four"
+              android:layout_width="100dp"
+              android:layout_height="wrap_content"
+              />
+
+
+      </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"/>
+    <Button
+        android:layout_marginLeft="40dp"
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"/>
+</LinearLayout>
+  </LinearLayout>
+
+</RelativeLayout>
